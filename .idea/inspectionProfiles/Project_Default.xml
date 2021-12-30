@@ -1,0 +1,60 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="subdivisions" />
+            <item index="1" class="java.lang.String" itemvalue="staff" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="str.__or__" />
+          <option value="staff_tree.apps.staff.models.subdivisions" />
+          <option value="staff_tree.apps.subdivisions.models.PositionAtWork.objects" />
+          <option value="staff_tree.generate_data.generators.generator_position_at_work.subdivisions" />
+          <option value="staff_tree.generate_data.generators.generator_subdivision.subdivisions" />
+          <option value="staff_tree.generate_data.generators.generator_levels.subdivisions" />
+          <option value="staff_tree.apps.staff.models.Employee.objects" />
+          <option value="staff_tree.generate_data.generators.generator_position_at_work.GeneratorPositionAtWork.objects" />
+          <option value="staff_tree.apps.subdivisions.models.Level.objects" />
+          <option value="staff_tree.apps.subdivisions.models.Subdivision.objects" />
+          <option value="staff_tree.apps.subdivisions.generator.subdivisions" />
+          <option value="staff_tree.apps.staff.generator.subdivisions" />
+          <option value="staff_tree.apps.staff.generator.staff" />
+          <option value="staff_tree.apps.staff.views.staff" />
+          <option value="staff_tree.apps.staff.views.subdivisions" />
+          <option value="apps.subdivisions.models.Level.objects" />
+          <option value="apps.subdivisions.models.Subdivision.objects" />
+          <option value="django.db.models.fields.related.ForeignKey.title" />
+          <option value="polls.models.Answer.objects" />
+          <option value="polls.models.Choice.objects" />
+          <option value="polls.models.Question.objects" />
+          <option value="polls.models.Poll.objects" />
+          <option value="polls.models.Choice.answer_set" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
