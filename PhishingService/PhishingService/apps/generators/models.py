@@ -12,6 +12,8 @@ class ReferenceInfo(models.Model):
     link = models.CharField(verbose_name="Ссылка для конкретного email", max_length=100)
     user = models.OneToOneField(User, verbose_name="Пользователь", on_delete=models.CASCADE)
 
+    is_read = models.BooleanField(verbose_name="Прочитано", default=False)
+
     def __str__(self):
         return f"{self.user}"
 
