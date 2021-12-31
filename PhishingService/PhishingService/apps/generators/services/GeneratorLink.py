@@ -1,10 +1,11 @@
 import hashlib
+from base64 import encode
 
 
 class GeneratorLink:
-    SECURITY = "SECRET_KEY"
 
     @staticmethod
     def GetGenerateLinkForEmail(email: str) -> str:
-        generated_link = hashlib.md5(email).hexdigest()
+        bytes_email = email
+        generated_link = hashlib.md5(email.encode()).hexdigest()
         return generated_link
