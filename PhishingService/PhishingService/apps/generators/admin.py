@@ -4,7 +4,7 @@ from .models import *
 
 
 class ReferenceInfoTable(admin.ModelAdmin):
-    readonly_fields = ("link",)
+    readonly_fields = ("link", "is_read", "is_post_data", "count_views")
 
 
 admin.site.register(ReferenceInfo, ReferenceInfoTable)

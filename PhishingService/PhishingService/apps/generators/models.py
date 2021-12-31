@@ -13,6 +13,8 @@ class ReferenceInfo(models.Model):
     user = models.OneToOneField(User, verbose_name="Пользователь", on_delete=models.CASCADE)
 
     is_read = models.BooleanField(verbose_name="Прочитано", default=False)
+    is_post_data = models.BooleanField(verbose_name="Отправил ли информацию котрая указана в форме", default=False)
+    count_views = models.BooleanField(verbose_name="Кол-во просмотров страницы", default=0)
 
     def __str__(self):
         return f"{self.user}"
