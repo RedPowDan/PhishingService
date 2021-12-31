@@ -7,4 +7,4 @@ class ReferenceInfoTable(admin.ModelAdmin):
     readonly_fields = ("link",)
 
 
-admin.site.register(ReferenceInfo)
+admin.site.register(ReferenceInfo, ReferenceInfoTable)
