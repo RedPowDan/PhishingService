@@ -5,10 +5,11 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
+from PhishingService.apps.base import BaseModel
 from PhishingService.apps.generators.services import GeneratorLink
 
 
-class ReferenceInfo(models.Model):
+class ReferenceInfo(BaseModel):
     link = models.CharField(verbose_name="Ссылка для конкретного email", max_length=100)
     user = models.OneToOneField(User, verbose_name="Пользователь", on_delete=models.CASCADE)
 
